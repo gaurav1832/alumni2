@@ -1,0 +1,63 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+<h2>{{ title }}.</h2>
+<p>People that make the Alumni Association happen</p>
+
+<hr />
+
+<div class="container">
+    <div class="row team-committee">
+        <h3>Alumni Association Committee Members</h3>
+        <div class="col-sm-4">
+            <img src="{% static 'app/images/committee/manish khatore.jpg' %}" class="img-circle img-halo"
+                    height="200" width="200" />
+            <h4>Manish Khatore</h4>
+            <p class="font-large">President</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'app/images/committee/vineet kumar.jpg' %}" class="img-circle img-halo"
+                    height="200" width="200" />
+            <h4>Vineet Kumar</h4>
+            <p class="font-large">Vice-President</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'app/images/committee/mohua rai.jpg' %}" class="img-circle img-halo"
+                    height="200" width="200" />
+            <h4>Mohua Rai</h4>
+            <p class="font-large">Honorary General Secretary</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'app/images/committee/avinash kumar.jpg' %}" class="img-circle img-halo"
+                    height="200" width="200" />
+            <h4>Avinash Kumar Singh</h4>
+            <p class="font-large">Joint Secretary</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'app/images/committee/anirban roy.jpg' %}" class="img-circle img-halo"
+                    height="200" width="200" />
+            <h4>Anirban Roy</h4>
+            <p class="font-large">Treasurer</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="{% static 'app/images/committee/arundhati chakrabarty.jpg' %}" class="img-circle img-halo"
+                    height="200" width="200" />
+            <h4>Arundhati Chakrabarty</h4>
+            <p class="font-large">Association Member</p>
+        </div>
+    </div>
+    <div class="row team-developers">
+        <h3>Development and Task force</h3>
+        <div class="col-sm-4 col-sm-offset-4">
+            <img src="{% static 'app/images/committee/animesh sinha.jpg' %}" class="img-circle img-halo"
+                    height="150" width="150" />
+            <h4>Animesh Sinha</h4>
+            <p class="font-large">Developer</p>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}
